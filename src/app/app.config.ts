@@ -8,7 +8,7 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD0oTHdNU0Rs1jjAfmzlpHMJntci00rekI",
+  apiKey: "your-api-key",
   authDomain: "gardenz-fde71.firebaseapp.com",
   projectId: "gardenz-fde71",
   storageBucket: "gardenz-fde71.firebasestorage.app",
