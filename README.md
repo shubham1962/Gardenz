@@ -1,59 +1,48 @@
-# FirstApp
+# Gardenz Website 🌱
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+Gardenz is a web-based platform designed for gardening enthusiasts. It provides a comprehensive solution for shopping gardening tools, accessing services, reading blogs, and engaging with a community of gardeners.
 
-## Development server
+## Features
 
-To start a local development server, run:
+### Frontend
+1. **User Authentication**:
+   - Login and Registration with JWT-based authentication.
+   - Passwords are securely hashed using BCrypt.
+2. **Navigation**:
+   - Dynamic header with navigation links and user state handling.
+   - Shopping cart icon is enabled only for logged-in users.
+3. **Home Page**:
+   - Overview of available products and services.
+   - Call-to-action for joining the gardening community.
+4. **Shop**:
+   - Product browsing and filtering functionality.
+   - Shopping cart and checkout feature with payment gateway integration.
+5. **Community**:
+   - A space for users to interact, share tips, and participate in discussions.
+6. **Contact Us**:
+   - A form for inquiries, integrated with `FormSubmit.co`.
 
-```bash
-ng serve
-```
+   ## Technologies Used
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Frontend
+- **Framework**: Angular 19
+- **Styling**: Bootstrap 5, CSS
+- **API Integration**: Angular HttpClient
 
-## Code scaffolding
+### Backend
+- **Framework**: .NET 8 (C#)
+- **Database**: Microsoft SQL Server
+- **Authentication**: JWT (JSON Web Tokens)
+- **Password Hashing**: BCrypt
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+# API Endpoints
+## Authentication
+**Register: POST /api/auth/register**
+**Login: POST /api/auth/login**
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Products
+**Get All Products: GET /api/products**
+**Get Product by ID: GET /api/products/{id}**
+**Add Product: POST /api/products**
+**Update Product: PUT /api/products/{id}**
+**Delete Product: DELETE /api/products/{id}**
