@@ -1,0 +1,38 @@
+
+  <div class="payment-container">
+    <h2 class="text-center">Payment Options</h2>
+    <form class="payment-form">
+      <div class="form-group">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" class="form-control" placeholder="Enter card number" required />
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="expiryDate">Expiry Date</label>
+          <input type="text" id="expiryDate" class="form-control" placeholder="MM/YY" required />
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input type="password" id="cvv" class="form-control" placeholder="CVV" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="paymentMethod">Choose Payment Method</label>
+        <select id="paymentMethod" class="form-control">
+          <option value="creditCard">Credit Card</option>
+          <option value="debitCard">Debit Card</option>
+          <option value="upi">UPI</option>
+          <option value="wallet">Digital Wallet</option>
+          <option value="netBanking">Net Banking</option>
+        </select>
+      </div>
+  
+      <div class="text-center mt-4">
+        <button class="btn btn-success" (click)="proceedToPay()">Proceed to Pay</button>
+        <a routerLink="/cart" class="btn btn-secondary ms-3">Go Back to Cart</a>
+      </div>
+
+
+    </form>
+  </div>
+  

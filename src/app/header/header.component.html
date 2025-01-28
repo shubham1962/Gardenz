@@ -1,0 +1,127 @@
+<!-- <div>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+     <a class="navbar-brand" href="#">
+       <img src="../../assets/logo.png"  alt="garden logo" />
+     </a>
+     <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       <li class="nav-item">
+        <a class="nav-link" routerLink ="/">
+         Home
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" routerLink="/shop">
+         Shop
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" routerLink="/services">
+         Services
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" routerLink="/blog">
+         Blog
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" routerLink="/community">
+         Community
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" routerLink="/about-us">
+         About Us
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" routerLink="/contact">
+         Contact
+        </a>
+       </li>
+      </ul>
+      <div class="search-container">
+       <i class="fas fa-search search-icon">
+       </i>
+       <input class="form-control search-input" placeholder="Search" type="text"/>
+      </div>
+      <a class="nav-link" routerLink="/login">
+       Log In
+      </a>
+      <i class="fas fa-shopping-cart cart-icon">
+      </i>
+     </div>
+    </div>
+  </nav>
+ -->
+
+ <!-- <nav  class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/logo.png" alt="garden logo" />
+    </a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" *ngFor="let item of navItems">
+          <a class="nav-link" [routerLink]="item.route">{{ item.label }}</a>
+        </li>
+      </ul>
+      <div class="search-container">
+        <i class="fas fa-search search-icon"></i>
+        <input class="form-control search-input" placeholder="Search" type="text" />
+      </div>
+      <a class="nav-link" routerLink="/login">Log In</a>
+     <a routerLink="/cart">
+      <i class="fas fa-shopping-cart cart-icon"></i></a>
+    </div>
+  </div>
+</nav> -->
+
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/logo.png" alt="Garden logo" />
+    </a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" *ngFor="let item of navItems">
+          <a class="nav-link" [routerLink]="item.route">{{ item.label }}</a>
+        </li>
+      </ul>
+      <div class="search-container">
+        <i class="fas fa-search search-icon"></i>
+        <input class="form-control search-input" placeholder="Search" type="text" />
+      </div>
+
+      
+      <div *ngIf="user; else loginTemplate">
+        <span class="navbar-text me-3">Welcome, {{ user.email }}</span>
+        <a class="nav-link button" (click)="logout()">Logout</a>
+      </div>
+
+      
+      <ng-template #loginTemplate>
+        <a class="nav-link" routerLink="/login">Login</a>
+      </ng-template>
+
+
+
+      <!-- <a routerLink="/cart">
+        <i class="fas fa-shopping-cart cart-icon"></i>
+      </a> -->
+
+      <a
+  [routerLink]="user ? '/cart' : null"
+  [class.disabled]="!user"
+  class="nav-link"
+  [attr.aria-disabled]="!user"
+>
+  <i class="fas fa-shopping-cart cart-icon"></i>
+</a>
+    </div>
+  </div>
+</nav>
+

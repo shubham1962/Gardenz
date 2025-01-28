@@ -1,0 +1,76 @@
+/* General Body Styling */
+body {
+    background-color: #f8f9fa; /* Light background for contrast */
+    font-family: Arial, sans-serif; /* Clean font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  
+  
+  /* Center Container */
+  .container {
+    margin-top: 200px;
+  }
+  
+  /* Card Styling */
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    border: none;
+    padding: 20px;
+    background-color: #ffffff; /* White background for card */
+  }
+  
+  /* Card Title */
+  .card-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Darker text */
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Form Inputs */
+  .form-control {
+    border-radius: 5px; /* Slightly rounded corners */
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #007bff; /* Primary color border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow */
+  }
+  
+  /* Button Styling */
+  .btn {
+    width: 100%; /* Full-width button */
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .btn-primary {
+    background-color: #0f9f42;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #066018; /* Darker shade on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .col-md-6 {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+  

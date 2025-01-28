@@ -1,0 +1,259 @@
+
+
+/* Carousel Text Styling */
+.carousel-item .carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%) scale(0.5); /* Start completely scaled down */
+  text-align: center;
+  color: rgb(63, 6, 6);
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0; /* Start fully invisible */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Show Text on Active Slide */
+.carousel-item.active .carousel-text {
+  opacity: 1; /* Fully visible */
+  transform: translate(-50%, -50%) scale(1); /* Scale up to original size */
+}
+
+
+
+
+
+
+.featured-card {
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+  }
+  
+  .featured-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px; /* Match border radius */
+    border-top-right-radius: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Larger title */
+    font-weight: bold; /* Bold font */
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 0.95rem; /* Adjusted text size */
+    color: #555; /* Grey text */
+  }
+  
+  .btn-primary {
+    background-color: #3b9a44; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 5px 20px; 
+  }
+  
+  .btn-primary:hover {
+    background-color: #036e0e; 
+  }
+  
+  .add-to-cart-btn {
+    border-radius: 20px; 
+    padding: 5px 20px;
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #3b9a44; /* Highlight on hover */
+    color: #fff;
+    border-color: #002d05;
+  }
+
+  
+  /* Section Heading */
+  h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  /* Card Styling */
+  .service-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card Image */
+  .service-card img {
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+  
+  /* Card Title */
+  .service-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  /* Card Text */
+  .service-card .card-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Buttons */
+  .service-card .btn {
+    border-radius: 20px;
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card .btn-primary {
+    background-color: #3b9a44;
+    border-color: #3b9a44;
+  }
+  
+  .service-card .btn-primary:hover {
+    background-color: #036e0e;
+    border-color: #036e0e;
+  }
+  
+  .service-card .btn-outline-secondary {
+    color: #555;
+    border-color: #555;
+  }
+  
+  .service-card .btn-outline-secondary:hover {
+    color: #fff;
+    border-color: #333;
+    background-color: #565454;
+  }
+
+  
+
+  /* Testimonial Section Styling */
+.testimonial-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 700;
+  }
+  
+  .testimonial-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .testimonial {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Testimonial Image */
+  .testimonial-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 1px solid #4b5f53;
+  }
+  
+  /* Testimonial Content */
+  .testimonial-content {
+    flex: 1;
+  }
+  
+  .testimonial .quote {
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .testimonial .quote i {
+    color: #2ecc71;
+  }
+  
+  .testimonial .name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .testimonial .position {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  /* Ensure consistent sizing for the cards */
+.side-by-side-card {
+    height: 300px; /* Set a uniform height */
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  /* Adjust the image to cover the card dimensions */
+  .side-by-side-card .card-img {
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and fill the card */
+  }
+  
+  /* Add a text shadow for better readability on images */
+  .text-shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+
+/* Customer Review Section Styling */
+.customer-review-section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Customer Image Styling */
+  .customer-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #ddd;
+  }
+  
+  /* Customer Name Styling */
+  .customer-name {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Customer Review Text Styling */
+  .customer-review {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
