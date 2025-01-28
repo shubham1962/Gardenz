@@ -37,12 +37,12 @@ Gardenz is a web-based platform designed for gardening enthusiasts. It provides 
 
 # API Endpoints
 ## Authentication
-**Register: POST /api/auth/register**
-**Login: POST /api/auth/login**
+-**Register: POST /api/auth/register**
+-**Login: POST /api/auth/login**
 
 ## Products
-**Get All Products: GET /api/products**
-**Get Product by ID: GET /api/products/{id}**
-**Add Product: POST /api/products**
-**Update Product: PUT /api/products/{id}**
-**Delete Product: DELETE /api/products/{id}**
+-**Get All Products: GET /api/products**
+-**Get Product by ID: GET /api/products/{id}**
+-**Add Product: POST /api/products**
+-**Update Product: PUT /api/products/{id}**
+-**Delete Product: DELETE /api/products/{id}**
